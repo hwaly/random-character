@@ -7,6 +7,8 @@ const randomCharacter2 = new RandomCharacter({
 });
 
 console.log(`Default: ${randomCharacter.generate()}`);
+console.log(`Id: ${randomCharacter.generate({type: 'lower, upper', size: 10})}`);
+console.log(`Password: ${randomCharacter.generate({type: 'digit, lower, upper', size: 255})}`);
 console.log(`Name: ${randomCharacter2.generate({type: 'lastName'})}${randomCharacter2.generate({type: 'firstName', size: 2})}`);
 console.log(`Tel: 010-${randomCharacter.generate({size: 4})}-${randomCharacter.generate({size: 4})}`);
 console.log(`Content: ${randomCharacter.generate({type: 'digit, lower, upper, korean, special', size: 100})}`);

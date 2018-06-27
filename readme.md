@@ -21,16 +21,17 @@ const randomCharacterOption = {
     // upper: ABCDEFGHIJKLMNOPQRSTUVWXYZ,
     // korean: 유니코드 44032 ~ 55204 사이의 글자,
     // special: ~!@#$%^&*()_+{}|:"<>?`-=[];',./!♡♥☆★♩♪♬
-    type: 'digit',
+    type: 'digit, lower, upper',
     
     // 생성 할 문자 개수
     // default: 1
-    size: 1
+    size: 255
 };
 
-// 옵션 생략 가능
 const randomCharacter = new RandomCharacter();
+// 옵션 생략 가능
 console.log(`Default: ${randomCharacter.generate()}`);
+console.log(`Default: ${randomCharacter.generate(randomCharacterOption)}`);
 
 // 타입 추가
 const randomCharacter2 = new RandomCharacter({
