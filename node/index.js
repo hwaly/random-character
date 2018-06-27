@@ -48,4 +48,4 @@ const RandomCharacter = class {
     }
 };
 
-export default RandomCharacter;
+module.exports = RandomCharacter;
