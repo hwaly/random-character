@@ -42,6 +42,10 @@ const RandomCharacter = class {
     }
 
     generate({type = 'digit', size = 1} = {}) {
+        if (typeof type !== 'string') {
+            throw new Error('타입이 잘못 입력되었습니다.');
+        }
+
         this._setCurrent({type, size});
 
         return this._randomCharacter();
