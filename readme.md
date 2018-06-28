@@ -31,7 +31,7 @@ const randomCharacterOption = {
 const randomCharacter = new RandomCharacter();
 // 옵션 생략 가능
 console.log(`Default: ${randomCharacter.generate()}`);
-console.log(`Default: ${randomCharacter.generate(randomCharacterOption)}`);
+console.log(`Option: ${randomCharacter.generate(randomCharacterOption)}`);
 
 // 타입 추가
 const randomCharacter2 = new RandomCharacter({
