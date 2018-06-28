@@ -1,7 +1,7 @@
 # 무작위 글자 생성
 
 ## 설치
-```js
+```
 npm install hwaly-random-character
 ```
 
